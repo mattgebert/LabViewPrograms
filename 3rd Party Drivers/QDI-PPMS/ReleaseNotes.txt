@@ -1,0 +1,254 @@
+Quantum Design
+QDInstrument LabVIEW
+
+This file contains release notes. For usage instructions, see Application Note 1070-210. 
+
+Release Notes:
+
+--- Version 1.0.5
+
+Compatible with LabVIEW 8.2 through LabVIEW 2014
+
+Added:
+- Write SDO capability. This is not in the generally released package, but is available by request. Supported in local mode only (not remote mode).
+
+File Versions:
+QDInstrument.dll: 1.0.6.28368
+QDInstrument_Server.exe: 1.0.6.15616
+QDInstrument_Example.vi: 133
+CAN_Float_Example.vi: 191
+ReadSDO_FLT.vi: 80
+ReadSDO_S16.vi: 83
+ReadSDO_S32.vi: 84
+ReadSDO_S8.vi: 82
+ReadSDO_STR.vi: 83
+ReadSDO_U16.vi: 84
+ReadSDO_U32.vi: 85
+ReadSDO_U8.vi: 83
+CAN_Float_Write_Example.vi: 196
+WriteSDO_FLT.vi: 83
+WriteSDO_S16.vi: 85
+WriteSDO_S32.vi: 85
+WriteSDO_S8.vi: 86
+WriteSDO_STR.vi: 88
+WriteSDO_U16.vi: 87
+WriteSDO_U32.vi: 86
+WriteSDO_U8.vi: 87
+GetPPMSItem.vi: 3
+GetPPMSItem_Example.vi: 12
+SendPPMSCommand.vi: 7
+SendPPMSCommand_Example.vi: 18
+SendPPMSCommand_Rotator.vi: 30
+GetChamber.vi: 42
+GetField.vi: 36
+GetPosition.vi: 12
+GetTemperature.vi: 35
+OpenQDInstrument.vi: 95
+QDInstrumentExceptionHandler.vi: 23
+SetChamber.vi: 53
+SetField.vi: 50
+SetPosition.vi: 10
+SetTemperature.vi: 51
+WaitFor.vi: 65
+
+--- Version 1.0.4
+
+Compatible with LabVIEW 8.2 through LabVIEW 2013.
+
+Added:
+- SendPPMSCommand functionality. This allows users to send arbitrary GPIB commands to the Model 6000, and receive the reply string. Allows rotator to be controlled. Applies only to PPMS.
+
+File Versions:
+QDInstrument.dll: 1.0.4.18847 
+QDInstrument_Server.exe: 1.0.4.21519
+QDInstrument_Example.vi: 132
+CAN_Float_Example.vi: 190
+ReadSDO_FLT.vi: 79
+ReadSDO_S16.vi: 82
+ReadSDO_S32.vi: 83
+ReadSDO_S8.vi: 81
+ReadSDO_STR.vi: 82
+ReadSDO_U16.vi: 83
+ReadSDO_U32.vi: 84
+ReadSDO_U8.vi: 82
+GetPPMSItem.vi: 3
+GetPPMSItem_Example.vi: 11
+SendPPMSCommand.vi: 7
+SendPPMSCommand_Example.vi: 17
+SendPPMSCommand_Rotator.vi: 29
+GetChamber.vi: 41
+GetField.vi: 35
+GetPosition.vi: 11
+GetTemperature.vi: 34
+OpenQDInstrument.vi: 93
+QDInstrumentExceptionHandler.vi: 23
+SetChamber.vi: 52
+SetField.vi: 49
+SetPosition.vi: 9
+SetTemperature.vi: 50
+WaitFor.vi: 64
+
+--- Version 1.0.3
+
+Compatible with LabVIEW 8.2 through LabVIEW 2012
+
+Fixed:
+- Connection messages corrected to reflect that fact that sometimes the dll seems to connect to the server even though it does not.
+- Removed crash when changing port in server while a client is connected. Port changing is now not allowed when a client is connected.
+
+File versions:
+QDInstrument.dll: 1.0.3.22383
+QDInstrument_Server.exe: 1.0.3.21648
+QDInstrument_Example.vi: 131
+CAN_Float_Example.vi: 189
+ReadSDO_FLT.vi: 78
+ReadSDO_S16.vi: 81
+ReadSDO_S32.vi: 82
+ReadSDO_S8.vi: 80
+ReadSDO_STR.vi: 81
+ReadSDO_U16.vi: 82
+ReadSDO_U32.vi: 83
+ReadSDO_U8.vi: 81
+GetPPMSItem.vi: 3
+GetPPMSItem_Example.vi: 10
+GetChamber.vi: 40
+GetField.vi: 34
+GetPosition.vi: 10
+GetTemperature.vi: 33
+OpenQDInstrument.vi: 91
+QDInstrumentExceptionHandler.vi: 23
+SetChamber.vi: 51
+SetField.vi: 48
+SetPosition.vi: 8
+SetTemperature.vi: 49
+WaitFor.vi: 63
+
+
+--- Version 1.0.0
+
+Compatible with LabVIEW 8.2 through LabVIEW 2011
+
+Added:
+- Ability to set position, get position, and wait for position. This works only on DynaCool release 1.0.4 and later. Other platforms do not yet support position from LabVIEW (as of 8/1/2012).
+
+Fixed:
+- Made connection failure messages more clear. There are now separate messages for failure to connect to remote server and failure to connect to MultiVu.
+ 
+
+File versions:
+QDInstrument.dll: 1.0.0.26636
+QDInstrument_Server.exe: 1.0.0.26444
+QDInstrument_Example.vi: 130
+CAN_Float_Example.vi: 188
+ReadSDO_FLT.vi: 77
+ReadSDO_S16.vi: 80
+ReadSDO_S32.vi: 81
+ReadSDO_S8.vi: 79
+ReadSDO_STR.vi: 80
+ReadSDO_U16.vi: 81
+ReadSDO_U32.vi: 82
+ReadSDO_U8.vi: 80
+GetPPMSItem.vi: 3
+GetPPMSItem_Example.vi: 9
+GetChamber.vi: 39
+GetField.vi: 33
+GetPosition.vi: 9
+GetTemperature.vi: 32
+OpenQDInstrument.vi: 89
+QDInstrumentExceptionHandler.vi: 23
+SetChamber.vi: 50
+SetField.vi: 47
+SetPosition.vi: 7
+SetTemperature.vi: 48
+WaitFor.vi: 62
+
+--- Version 0.1.7
+
+Compatible with LabVIEW 8.2 through LabVIEW 2011
+
+Added:
+- Ability to read PPMS data items from the Model 6000.
+- Error dialog in LabVIEW when an error occurs in QDInstrument.dll. Also, the VIs stop when such an error occurs.
+
+File versions:
+QDInstrument.dll: 0.1.7.13645
+QDInstrument_Server.exe: 0.1.7.13792
+QDInstrument_Example.vi: 129
+CAN_Float_Example.vi: 187
+ReadSDO_FLT.vi: 76
+ReadSDO_S16.vi: 79
+ReadSDO_S32.vi: 80
+ReadSDO_S8.vi: 78
+ReadSDO_STR.vi: 79
+ReadSDO_U16.vi: 80
+ReadSDO_U32.vi: 81
+ReadSDO_U8.vi: 79
+GetPPMSItem.vi: 3
+GetPPMSItem_Example.vi: 8
+GetChamber.vi: 38
+GetField.vi: 32
+GetTemperature.vi: 31
+OpenQDInstrument.vi: 87
+QDInstrumentExceptionHandler.vi: 23
+SetChamber.vi: 49
+SetField.vi: 46
+SetTemperature.vi: 47
+WaitFor.vi: 60
+
+
+--- Version 0.1.5
+
+Compatible with LabVIEW 8.2 through LabVIEW 2011
+
+Added:
+- Ability to read CAN SDOs either remotely or locally.
+
+Changed:
+- MultiVu Type in QDInstrument_Server.exe is now human-readable and indicates when there is no connection to MultiVu.
+
+Fixed:
+- MultiVu can now be closed when QDInstrument_Server.exe is running as long as the server is not using MultiVu. Previously the QDInstrument_Server.exe had to be closed prior to closing MultiVu, or else MultiVu would "zombie."
+
+File versions:
+QDInstrument.dll: 0.1.5.16386
+QDInstrument_Server.exe: 0.1.5.25984
+QDInstrument_Example.vi: 123
+OpenQDInstrument.vi: 79
+SetTemperature.vi: 45
+GetTemperature.vi: 29
+SetChamber.vi: 47
+GetChamber.vi: 36
+SetField.vi: 44
+GetField.vi: 30
+WaitFor.vi: 58
+ReadSDO_FLT.vi: 73
+ReadSDO_STR.vi: 76
+ReadSDO_S8.vi: 75
+ReadSDO_S16.vi: 76
+ReadSDO_S32.vi: 77
+ReadSDO_U8.vi: 76
+ReadSDO_U16.vi: 77
+ReadSDO_U32.vi: 78
+CAN_Float_Example.vi: 186
+
+
+--- Version 0.1.3
+
+Compatible with LabVIEW 8.2 through LabVIEW 2011
+
+This version provides LabVIEW compatibility with Quantum Design PPMS, DynaCool, VersaLab
+and SVSM intruments. LabVIEW can be on the same computer as MultiVu (local) or on a 
+different computer (remote).
+
+File Versions:
+QDInstrument.dll: 0.1.3.22908
+QDInstrument_Server.exe: 0.1.3.17069
+LoopExample.vi: 120
+OpenQDInstrument.vi: 72
+SetTemperature.vi: 42
+GetTemperature.vi: 27
+SetChamber.vi: 42
+GetChamber.vi: 33
+SetField.vi: 42
+GetField.vi: 28
+WaitFor.vi: 52
